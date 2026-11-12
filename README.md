@@ -96,7 +96,7 @@ plots/        Generated SVG/PDF figures (ignored by Git)
 report/       Report source and measured local validation notes
 ```
 
-The original [project proposal](Smita_Naik_Parallel_System_Proposal.pdf) is preserved. Requirements are in [prompt.txt](prompt.txt), which ends at the first correctness-test bullet.
+The original [project proposal](Smita_Naik_Parallel_System_Proposal.pdf) is preserved.
 
 ## Development roadmap
 
