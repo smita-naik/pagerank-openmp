@@ -1,0 +1,106 @@
+You are an expert in high-performance computing (HPC), multicore CPU optimization, C++, OpenMP, graph algorithms, and experimental performance analysis.
+
+I am implementing my CSC 548: Parallel Systems final project at North Carolina State University.
+
+**Project Title: Optimizing PageRank on Multicore CPUs: Scheduling, Load Balancing, and Memory Locality**
+
+I want you to help implement this project end-to-end, following my approved proposal. The goal is to produce a complete, technically rigorous, reproducible graduate-level parallel computing project with meaningful optimization, correctness validation, extensive experimental evaluation, and insightful performance analysis.
+
+Do not simply produce a basic PageRank implementation. Focus on understanding and improving parallel scalability, scheduling overhead, load imbalance, and memory behavior.
+
+## 1. Project objectives
+
+Implement and compare:
+
+1. Serial PageRank in C++.
+2. OpenMP PageRank with static scheduling.
+3. OpenMP PageRank with dynamic scheduling.
+4. OpenMP PageRank with guided scheduling.
+5. Optimized PageRank using degree-aware or edge-balanced workload partitioning.
+
+Investigate how graph structure, thread count, scheduling strategy, and memory locality affect performance.
+
+## 2. Project setup
+
+First inspect my current VS Code workspace and identify existing source files, graph datasets, scripts, and configuration.
+
+If the project is empty, create a well-organized repository with:
+
+- `src/` — C++ implementations
+- `include/` — Header files
+- `tests/` — Correctness tests
+- `scripts/` — Benchmarking, profiling, and plotting scripts
+- `data/` — Graph datasets or download/generation instructions
+- `results/` — Experimental results
+- `plots/` — Generated figures
+- `report/` — Final report source
+- `Makefile`
+- `README.md`
+
+Preserve useful existing files and avoid overwriting user data.
+
+## 3. Graph representation and serial implementation
+
+Implement an efficient CSR-based graph representation.
+
+Use a pull-based PageRank implementation with incoming-neighbor adjacency to enable parallel updates without atomic floating-point additions.
+
+Requirements:
+
+- Correctly handle directed graphs and dangling vertices.
+- Implement damping factor = 0.85.
+- Support configurable iteration count and convergence tolerance.
+- Use double precision.
+- Initialize PageRank values uniformly.
+- Use double buffering between iterations.
+- Precompute outdegrees and any reusable information.
+- Implement correct dangling-mass redistribution.
+- Avoid unnecessary memory allocation inside iterations.
+- Support Matrix Market and simple edge-list datasets, with documented indexing conventions.
+- Report iterations, runtime, convergence, and rank sum.
+
+The serial implementation must serve as the reference for both correctness and performance.
+
+## 4. Parallel OpenMP implementations
+
+Implement static, dynamic, and guided scheduling.
+
+Use the same underlying PageRank algorithm and numerical parameters for fair comparisons.
+
+Requirements:
+
+- Allow thread count configuration.
+- Allow scheduling policy and chunk-size configuration.
+- Use OpenMP reductions for dangling mass and convergence.
+- Avoid data races and unnecessary synchronization.
+- Allocate buffers outside repeated iterations.
+- Keep thread creation and scheduling overhead under control.
+- Make it easy to switch between strategies from the command line.
+
+Ensure that every implementation produces numerically equivalent PageRank results within a documented tolerance.
+
+## 5. Edge-balanced optimization
+
+Implement an additional degree-aware or edge-balanced strategy.
+
+Instead of assigning approximately equal numbers of vertices to threads, use incoming-edge counts to determine workload distribution.
+
+Requirements:
+
+- Calculate prefix sums of per-vertex edge counts.
+- Partition rows into contiguous ranges with approximately equal edge-processing workloads.
+- Build partitions efficiently.
+- Reuse the partitioning across PageRank iterations.
+- Support arbitrary thread counts.
+- Handle skewed graph distributions and high-degree vertices correctly.
+- Avoid unnecessary synchronization.
+
+Compare this strategy with the standard OpenMP scheduling approaches.
+
+Explain its limitations, including cases where balancing edge counts alone cannot eliminate imbalance, and cases where partition construction or memory effects outweigh the benefits.
+
+## 6. Correctness testing
+
+Create automated correctness tests covering:
+
+- Small directed graphs

@@ -1,0 +1,21 @@
+Local exploratory evaluation hardware (read separately from benchmark metadata)
+
+Command:
+sysctl -n machdep.cpu.brand_string hw.physicalcpu hw.logicalcpu hw.memsize hw.perflevel0.physicalcpu hw.perflevel1.physicalcpu
+
+Observed values in command order:
+Apple M4
+10
+10
+17179869184
+4
+6
+
+Interpretation: Apple M4, 10 physical/logical CPUs, 16 GiB RAM,
+4 performance cores and 6 efficiency cores.
+
+The benchmark's sandbox blocked its sysctl query. The original error is retained
+in metadata.json. This supplemental query was run outside the sandbox afterward.
+The operating system, compiler, flags and OpenMP API macro are recorded with the
+run. These experiments did not pin workers to a known subset of performance
+cores. No ARC hardware or NUMA placement is inferred from these measurements.

@@ -14,5 +14,9 @@ __pycache__/
 !.env.example
 data/*
 !data/.gitkeep
+!data/README.md
 results/*
 !results/.gitkeep
+!results/README.md
+plots/*
+!plots/README.md
