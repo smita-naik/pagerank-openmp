@@ -1,0 +1,20 @@
+#!/bin/bash
+#BSUB -J pagerank
+#BSUB -n 16
+#BSUB -R "span[hosts=1]"
+#BSUB -W 2:00
+#BSUB -o pagerank-%J.log
+# Legacy LSF template: verify queue and memory policy with ARC before use.
+# From repo root, export PAGERANK_GRAPH=data/graph.mtx, then:
+# bsub < scripts/arc.lsf
+set -euo pipefail
+graph=${PAGERANK_GRAPH:?Export PAGERANK_GRAPH before submitting with bsub < scripts/arc.lsf}
+export OMP_DYNAMIC=FALSE
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+export OMP_NUM_THREADS=16
+make CXX=g++ -j 16
+make CXX=g++ test
+python3 scripts/benchmark.py --graph "$graph" --threads 1,2,4,8,16 \
+    --chunks 0,16,256 --repeats 7 --iterations 100 \
+    --output "results/arc-${LSB_JOBID:?}-close"

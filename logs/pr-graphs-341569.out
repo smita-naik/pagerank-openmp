@@ -1,0 +1,7 @@
+=== GENERATED GRAPHS ===
+-rw-r--r-- 1 snaik4 ncsu 7.9M Nov 15 18:54 data/pr-hub-100k-1m.mtx
+-rw-r--r-- 1 snaik4 ncsu  12M Nov 15 18:54 data/pr-local-100k-1m.mtx
+-rw-r--r-- 1 snaik4 ncsu  12M Nov 15 18:54 data/pr-local-permuted-100k-1m.mtx
+-rw-r--r-- 1 snaik4 ncsu 8.9M Nov 15 18:54 data/pr-skewed-100k-1m.mtx
+-rw-r--r-- 1 snaik4 ncsu  12M Nov 15 18:54 data/pr-uniform-100k-1m.mtx
+GRAPH GENERATION COMPLETED

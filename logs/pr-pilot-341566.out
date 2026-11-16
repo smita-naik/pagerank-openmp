@@ -1,0 +1,105 @@
+=== HARDWARE ===
+c11
+Core(s) per socket:  8
+Socket(s):           2
+Model name:          Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz
+pid 671048's current affinity list: 0-15
+=== GENERATE SKEWED GRAPH ===
+=== BENCHMARK ===
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx static p=4 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx static p=1 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx edge-balanced p=1 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx serial p=1 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx static p=4 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx static p=2 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx static p=4 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx static p=2 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx static p=1 chunk=16
+block 1/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=64
+block 1/3: pilot-skewed-100k-1m.mtx static p=2 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx edge-balanced p=2 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx static p=1 chunk=0
+block 1/3: pilot-skewed-100k-1m.mtx edge-balanced p=4 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx static p=4 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx edge-balanced p=1 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx edge-balanced p=2 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx static p=4 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx static p=1 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx static p=2 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx edge-balanced p=4 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx static p=2 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx static p=1 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=16
+block 2/3: pilot-skewed-100k-1m.mtx serial p=1 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx static p=1 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx static p=4 chunk=0
+block 2/3: pilot-skewed-100k-1m.mtx static p=2 chunk=64
+block 2/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx static p=4 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx edge-balanced p=1 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx static p=4 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx static p=4 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx static p=1 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx edge-balanced p=4 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx static p=2 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx static p=2 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx edge-balanced p=2 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=4 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=0
+block 3/3: pilot-skewed-100k-1m.mtx static p=2 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx guided p=4 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx guided p=2 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=2 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx static p=1 chunk=64
+block 3/3: pilot-skewed-100k-1m.mtx guided p=1 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx static p=1 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx dynamic p=1 chunk=16
+block 3/3: pilot-skewed-100k-1m.mtx serial p=1 chunk=0
+Saved 93 validated measurements to results/pilot-341566
+=== ANALYSIS ===
+Saved 31 summaries to results/pilot-341566/summary.csv
+=== PILOT COMPLETED ===

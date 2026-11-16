@@ -1,0 +1,2 @@
+# Optional plotting dependency; core build, tests and benchmarks use stdlib only.
+matplotlib>=3.9,<4
