@@ -1,2 +1,4 @@
 # Optional plotting dependency; core build, tests and benchmarks use stdlib only.
 matplotlib>=3.9,<4
+# Used only to validate and render exported PDF figures on the plotting machine.
+PyMuPDF>=1.24,<2

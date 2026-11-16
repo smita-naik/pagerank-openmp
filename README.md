@@ -76,7 +76,11 @@ See the [experimental protocol](docs/experiments.md), [profiling instructions](d
 
 ## Measured local validation
 
-The [local analysis](report/local-validation.md) records 924 verified timing solves across six graphs and 90 separate profiling solves on an Apple M4. Release and address/undefined-behavior sanitizer suites pass 14,143 C++ checks, 43 CLI/input cases, and four experiment-script tests. The report includes measured speedups, workload imbalance, uncertainty, reproducible source snapshots, compressed raw evidence and selected figures. These results are exploratory; ARC scaling and Linux hardware-counter measurements remain pending.
+The [local analysis](report/local-validation.md) records 924 verified timing solves across six graphs and 90 separate profiling solves on an Apple M4. Release and address/undefined-behavior sanitizer suites pass 14,143 C++ checks, 43 CLI/input cases, and four experiment-script tests. The report includes measured speedups, workload imbalance, uncertainty, reproducible source snapshots, compressed raw evidence and selected figures. These local results are exploratory; the later ARC scaling results are linked below. Linux hardware-counter measurements are not part of the supplied evidence.
+
+## ARC results and report figures
+
+The completed ARC dataset contains 2,310 full timing measurements, 216 instrumented measurements, and 924 same-node locality measurements. See the [performance summary](results/performance_summary.md) for both highest-speedup and lowest-runtime configurations, and the [figure guide](plots/README.md) for 45 validated figures with PNG/PDF/SVG exports and reproduction commands. Node/SMT differences, variability, fixed chunk choices, and the limits of locality evidence are documented there.
 
 ## ARC execution
 

@@ -1,0 +1,6 @@
+label,graph,source,vertices,edges,max_in_degree,indegree_cv,dangling_vertices,isolated_vertices,max_edge_fraction
+uniform,/home/snaik4/pagerank-openmp/data/pr-uniform-100k-1m.mtx,results/full-341571-pr-uniform-100k-1m/raw.jsonl,100000,1000000,25,0.3163890010730461,3,0,2.5e-05
+skewed,/home/snaik4/pagerank-openmp/data/pr-skewed-100k-1m.mtx,results/full-341570-pr-skewed-100k-1m/raw.jsonl,100000,1000000,135227,52.17793807923039,4,2,0.135227
+hub,/home/snaik4/pagerank-openmp/data/pr-hub-100k-1m.mtx,results/full-341572-pr-hub-100k-1m/raw.jsonl,100000,1000000,899696,284.50713406064176,6,1,0.899696
+local,/home/snaik4/pagerank-openmp/data/pr-local-100k-1m.mtx,results/full-341573-pr-local-100k-1m/raw.jsonl,100000,1000000,28,0.3169353246326449,8,0,2.8e-05
+local-permuted,/home/snaik4/pagerank-openmp/data/pr-local-permuted-100k-1m.mtx,results/full-341574-pr-local-permuted-100k-1m/raw.jsonl,100000,1000000,28,0.3169353246326449,8,0,2.8e-05
